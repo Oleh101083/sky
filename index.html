@@ -1,58 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/uikit.min.css" />
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.min.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mountains</title>
 </head>
+<!--Scroll reveal CDN-->
+<script src="https://unpkg.com/scrollreveal"></script>
 <body>
-    <section class="bg" ibg >
-        <img src="images/x2.jpg" alt="">
-        <div class="sky" ></div>
+    <section class="zoom" id="zoom">
+        
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="logo" width="125px">
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Hallery</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Account</a></li>
+                            
+                        </ul>
+                    </nav>
+                    
+               <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+           
+            </div>
+            </div>
+            
+        
+        <img src="images/mountain1.png" id="layer1" alt="">
+        <img src="images/mountain2.png" id="layer2" alt="">
+        <img src="images/text.png" id="text" alt="">
+        
     </section>
-    <div class="menu">
-        <ul >
-            <li>
-                <a href="">Menu</a>
-            </li>
-            <li><a href="">Contacts</a>
-                </li>
-            <li><a href="">Galery</a>
-                </li>
-            <li><a href="">About Us</a>
-                </li>
-            <li><a href="">Registration</a></li>
-        </ul>
-    </div>
 
-    <div class="wrap">
-  
-        <article>
-            <span style="--stork:1;"><img src="images/content-1.jpg" alt=""></span>
-            <span style="--stork:2;"><img src="images/content-2.jpg" alt=""></span>
-            <span style="--stork:3;"><img src="images/content-3.jpg" alt=""></span>
-            <span style="--stork:4;"><img src="images/content-4.jpg" alt=""></span>
-            <span style="--stork:5;"><img src="images/content-5.jpg" alt=""></span>
-            <span style="--stork:6;"><img src="images/content-6.jpg" alt=""></span>
-            <span style="--stork:7;"><img src="images/content-7.jpg" alt=""></span>
-            <span style="--stork:8;"><img src="images/content-5.jpg" alt=""></span>
-    </article>
-</div>
-
-<div class="content">
-<div class="container">
     <div class="hi ">
         <div class="container-mini">
             <div class="hi__row ">
                 <div class="hi__body animate-left">
                     <div class="content-wrapper">
-                        <h2 uk-parallax="opacity: 0,1; y: -100,0; scale: 0.5,1; viewport: 0.5;" class="hi__title">Let The Adveture begin!</h2>
-                        <p uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;">
+                        <h2 class="hi__title">Let The Adveture begin!</h2>
+                        <p>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                             Incidunt dolore quibusdam laborum eos nisi doloribus maiores
                             inventore recusandae quisquam porro, cupiditate molestias
@@ -63,34 +57,25 @@
                             consectetur ratione in hic id totam ipsum quasi rem!
                         </p>
                     </div>
-    
-    
+
+
                 </div>
-                <div uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5" class="hi__image ibg col-3 animate-right">
-    
-                    <img src="images/content-1.jpg" alt="alt">
-    
+                <div class="hi__image ibg col-3 animate-right">
+
+                    <img src="images/content1.jpg" alt="alt">
+
                 </div>
             </div>
         </div>
     </div>
-    
-    <div class="mountains">
-        <div id="test-color" class="test-color uk-height-large uk-overflow-hidden uk-flex uk-flex-top" uk-parallax="opacity:0,1;  viewport: 0.5" style="box-shadow: 0 0 20px 0px rgba(169, 162, 162, 0.648); ">
-            <img src="images/content-4.jpg" alt="">
-                  <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-target; color: #ffff; viewport: 0.5">Headline</h1>
-              
-              </div>
-    </div>
-  
 
     <div class="hi ">
         <div class="container-mini">
             <div class="hi__row hi__row-reverse">
                 <div class="hi__body animate-right">
                     <div class="content-wrapper">
-                        <h2 uk-parallax="opacity: 0,1,1; y: -100,0,0; x: 10,10,0; scale: 1,1,1; viewport: 0.5;" class="hi__title">Let The Adveture begin!</h2>
-                        <p uk-parallax="opacity: 0,1,1; y: 100,0,0; x: -10,-10,0; scale: 0.5,1,1; viewport: 0.5;">
+                        <h2 class="hi__title">Let The Adveture begin!</h2>
+                        <p>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                             Incidunt dolore quibusdam laborum eos nisi doloribus maiores
                             inventore recusandae quisquam porro, cupiditate molestias
@@ -101,21 +86,79 @@
                             consectetur ratione in hic id totam ipsum quasi rem!
                         </p>
                     </div>
-    
+
                 </div>
-                <div uk-parallax="opacity: 0,1; y: -100,0; scale: 1,1; viewport: 0.5;" class="hi__image ibg col-3 animate-left">
-    
-                    <img  src="images/content-2.jpg" alt="alt">
+                <div class="hi__image ibg col-3 animate-left">
+
+                    <img src="images/content2.jpg" alt="alt">
                    
                 </div>
             </div>
         </div>
     </div>
-</div>
 
+ 
+
+
+
+    <div class="hi ">
+        <div class="container-mini">
+            <div class="hi__row">
+                <div class="hi__body">
+                    <div class="content-wrapper">
+                        <h2 class="hi__title animate-top">Let The Adveture begin!</h2>
+                        <p class="animate-bottom">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Incidunt dolore quibusdam laborum eos nisi doloribus maiores
+                            inventore recusandae quisquam porro, cupiditate molestias
+                            ipsam exercitationem quam nulla accusamus ipsa consequuntur magnam!
+                            Quasi nobis modi nisi quas sunt molestias eum adipisci reprehenderit.
+                            Similique nobis vero labore, excepturi doloribus sit inventore atque
+                            accusantium maxime,
+                            consectetur ratione in hic id totam ipsum quasi rem!
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider">
+        <div class='flex-wrapper'>
+            <div class="slider-wrapper">
+                <div class="slide active ibg">
+                    <img src="images/slider/content-1.jpg" alt="">
+                </div>
+                <div class="slide ibg">
+                    <img src="images/slider/content-2.jpg" alt="">
+                </div>
+                <div class="slide ibg">
+                    <img src="images/slider/content-3.jpg" alt="">
+                </div>
+                <div class="slide  ibg">
+                    <img src="images/slider/content-4.jpg" alt="">
+                </div>
+                <div id="btn-prev" onclick="stopSlid()"></div>
+                <div id="btn-next" onclick="stopSlid()"></div>
+            </div>
+
+        </div>
+        <div class="dots-wrapper">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    
 <footer class="footer">
     <div class="container">
         <div class="footer-row">
+            <div class="footer-logo">
+             <img src="images/logo.png" alt="">
+            </div>
             <nav class="footer-nav">
                 <ul>
                     <li><a href="">Home</a></li>
@@ -140,9 +183,8 @@
         </div>
     </div>
 </footer>
-</div>
 
-
-   <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
